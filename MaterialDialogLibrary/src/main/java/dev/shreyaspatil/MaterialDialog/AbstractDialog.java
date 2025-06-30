@@ -119,7 +119,7 @@ public abstract class AbstractDialog implements DialogInterface {
                     mPositiveButton.getOnClickListener().onClick(AbstractDialog.this, BUTTON_POSITIVE)
             );
         } else {
-            mPositiveButtonView.setVisibility(View.INVISIBLE);
+            mPositiveButtonView.setVisibility(View.GONE);
         }
 
         // Set Negative Button
@@ -134,7 +134,7 @@ public abstract class AbstractDialog implements DialogInterface {
                     mNegativeButton.getOnClickListener().onClick(AbstractDialog.this, BUTTON_NEGATIVE)
             );
         } else {
-            mNegativeButtonView.setVisibility(View.INVISIBLE);
+            mNegativeButtonView.setVisibility(View.GONE);
         }
 
         // If Orientation is Horizontal, Hide AnimationView
